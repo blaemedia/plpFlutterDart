@@ -7,10 +7,24 @@ int addition(int num1,int num2){
   return  resultAdd ;
 }
 
+int multiplication(int num1,int num2){
+  int resultMultiplication = num1 * num2;
+  return  resultMultiplication;
+}
 
-double subtraction(double num1,double num2){
-  double resultSub = num1 - num2;
+
+
+
+
+
+double subtraction(double dNum1,double dNum2){
+  double resultSub = dNum1 - dNum2;
   return  resultSub;
+}
+
+String stringLength(input){
+ 
+  return  input.length();
 }
 
 
@@ -34,6 +48,7 @@ Accepting input - first digit from user:*/
   print("\nEnter the second digit: \n");
   int? numTwo=int.parse(stdin.readLineSync()!);
 
+  
   
 
 /*Demonstrating double
@@ -77,8 +92,8 @@ Accepting input - first digit from user:*/
     
 
     // printing out all the entries:
-    print("\n syour Entries: \n name:${name} \n ${addition(numOne,numTwo)}" +
-  "\n ${subtraction(subNumOne,subNumTwo)}\n ${products}\n ${productsPrices} \n");
+    print("\n syour Entries: \n name:${name} \n addition: ${addition(numOne,numTwo)}\n subtraction: ${subtraction(subNumOne,subNumTwo)}" +
+  "\n multiplication: ${multiplication(numOne,numTwo)}\n List: ${products}\n Map: ${productsPrices} \n");
   }
    
 
