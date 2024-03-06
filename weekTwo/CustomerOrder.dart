@@ -13,19 +13,21 @@ int multiplication(int num1,int num2){
 }
 
 
-
-
-
-
 double subtraction(double dNum1,double dNum2){
   double resultSub = dNum1 - dNum2;
   return  resultSub;
 }
 
-String stringLength(input){
+int stringLength(input){
  
-  return  input.length();
+  return  input.length;
 }
+
+String getFirstElement(input){
+ 
+  return  input.substring(0,1);
+}
+
 
 
 
@@ -92,7 +94,9 @@ Accepting input - first digit from user:*/
     
 
     // printing out all the entries:
-    print("\n syour Entries: \n name:${name} \n addition: ${addition(numOne,numTwo)}\n subtraction: ${subtraction(subNumOne,subNumTwo)}" +
+    print("\n your Entries:\n \n name:${name} \n The length of your names is: \n ${stringLength(name)}" +
+    "\nfirst letter of your name:\n ${getFirstElement(name)}"+
+    "\n addition: ${addition(numOne,numTwo)}\n subtraction: ${subtraction(subNumOne,subNumTwo)}" +
   "\n multiplication: ${multiplication(numOne,numTwo)}\n List: ${products}\n Map: ${productsPrices} \n");
   }
    
